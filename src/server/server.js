@@ -3,7 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import { connectDB } from './connect-db';
 import './initialize-db';
-import { authenticationRoute, authenticationRout } from './authenticate';
+import { authenticationRoute } from './authenticate';
 
 let port = 7777;
 let app = express();
@@ -20,7 +20,7 @@ app.use(
     bodyParser.json()
 );
 
-authenticationRout(app);
+authenticationRoute(app);
 
 export const addNewTask = async task=>{
     let db = await connectDB();
