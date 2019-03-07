@@ -1,5 +1,5 @@
 import { MongoClient } from 'mongodb';
-const url = process.env.MONGODB_URI ||`mongodb://localhost:27017/myorganizer`;
+const url = process.env.MONGO_URL || `mongodb://localhost:27017/myorganizer`;
 let db = null;
 
 export async function connectDB(){

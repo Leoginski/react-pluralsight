@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/5c4dbb73-2cb6-49c3-bcde-f7e30d402077/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/compartilha",
+    "appService.deploySubpath": ""
+}
